@@ -1,0 +1,96 @@
+#luaran {
+    border:1px solid;
+}
+.kepala {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: aqua;
+    padding: 1%;
+}
+span {
+    text-align: center;
+    display: inline;
+}
+#konten {
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+}
+.notis {
+    text-align: center;
+    font-size: 20px;
+}
+.bentuk {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.persegi {
+    width:150px;
+    height: 150px;
+    outline: solid red;
+}
+.permintaan {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#sisi-luas {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+#sisi-keliling {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+input {
+    border: 1px solid;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+#hitung-luas {
+    margin-bottom: 50px;
+    padding: 15px;
+    color:white;
+    background-color: blue;
+    border-radius: 5px;
+    outline: solid black;
+}
+#hitung-keliling {
+    margin-bottom: 50px;
+    padding: 15px;
+    color:white;
+    background-color: blue;
+    border-radius: 5px;
+    outline: solid black;
+}
+#reset {
+    float: right;
+    padding: 5px;
+    color:white;
+    background-color: orangered;
+    border-radius: 5px;
+    outline: solid grey;
+}
+.penutup {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: aqua;
+    padding: 1%;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- Membaca script menggunakan HTML 5 -->
+<html lang="en">
+<head> <!-- Dalam project ini head digunakan untuk memanggil / memasukkan isi CSS dan Javascript -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body> <!-- Dalam body dibangun struktur penulisan yaitu header, navigator, article/konten, serta footer-->
+    <div id="luaran" style="background-color: aquamarine;"> <!-- Membuat kontainer terluar -->
+        <header>
+            <div class="kepala"> <!-- Membuat subkontainer dari nama aplikasi -->
+                <center> <!-- Membuat nama aplikasi -->
+                    <span style="font-size: 50px;">Katik</span> 
+                    <span style="font-size: 30px;">Kalkulator Matematik</span>
+                </center>
+            </div>
+        </header>
+        <div id="konten" style="background-color:rgb(27, 253, 178);" > <!-- Membuat subkontainer 
+            dari isi proyek -->
+            <nav>
+                <center><h2>Welcome to Katik</h2></center> <!-- Membuat text tentang pengenalan aplikasi -->
+                <div class="notis">Hai Sobat, Selamat datang di Katik :]</div>
+                <div class="notis" style="margin-bottom: 40px;">
+                    Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas
+                    dan keliling bangun datar
+                </div>
+            </nav>
+            <article> <!-- Membuat isi konten -->
+                <!-- LUAS PERSEGI -->
+                <center><h2>Luas Persegi</h2></center>
+                <div class="bentuk"> <!--Membuat kontainer untuk subkontainer baru
+                     agar memudahkan tata letak pembuatan persegi -->
+                    <div class="persegi"></div>
+                </div>
+                <div>Rumus Luas Persegi yaitu :</div> <!-- Menuliskan rumus persegi untuk ditampilkan -->
+                <center><div>L = S x S</div></center>
+                <div>Dimana :</div>
+                <div>L = Luas</div>
+                <div>S = Sisi</div>
+        
+                <form onsubmit="return false"> <!-- Fungsi ini untuk mengaktifkan 
+                    tombol enter untuk mengeksekusi input sebagai tombol hitung -->
+                    <div class="permintaan">Hitung Luas Persegi</div> <!-- Menyatakan permintaan yang dapat 
+                        diproses pada aplikasi -->
+                    <center><input id="sisi-luas" name="sisi-luas" 
+                        type="number" min="0" placeholder="Masukkan panjang sisi dalam meter"></input></center>
+                    <!-- Memasukkan nilai input angka dari user -->
+                    <div id="tampil-rumusLuas"></div> 
+                    <div id="tampil-sisiLuas"></div>
+                    <div id="output_luas"></div> <!-- Ketiga id di atas ini digunakan untuk mengisi 
+                        hasil eksekusi logic javascript -->
+                    <center><button id="hitung-luas" name="hitung-luas" onclick="hitung_luas()">
+                        Hitung
+                    </button></center> <!-- Membuat tombol untuk submit nilai input dari user -->
+                    <button id="reset" type="reset" onclick="hapus_semuaLuas()">Reset</button> 
+                    <!-- Membuat tombol reset -->
+                </form>
+                <br><br>
+        
+                <!-- KELILING PERSEGI -->
+                <!-- Isi script di bawah ini sama seperti dengan yang di atas 
+                    hanya saja penggunaanya untuk keliling persegi -->
+                <center><h2>Keliling Persegi</h2></center>
+                <div class="bentuk">
+                    <div class="persegi"></div>
+                </div>
+                <div>Rumus Keliling Persegi yaitu :</div>
+                <center><div>K = 4 x S</div></center>
+                <div>Dimana :</div>
+                <div>K = Keliling</div>
+                <div>S = Sisi</div>
+        
+                <form onsubmit="return false">
+                    <div class="permintaan">Hitung Keliling Persegi</div>
+                    <center><input id="sisi-keliling" name="sisi-keliling" 
+                        type="number" min="0" placeholder="Masukkan panjang sisi dalam meter"></input></center>
+                    <div id="tampil-rumusKeliling"></div>
+                    <div id="tampil-sisiKeliling"></div>
+                    <div id="output_keliling"></div>
+                    <center><button id="hitung-keliling" name="hitung-keliling" onclick="hitung_keliling()">
+                        Hitung
+                    </button></center>
+                    <button id="reset" type="reset" onclick="hapus_semuaKeliling()">Reset</button>
+                </form>
+                <br><br>
+            </article>
+        </div>
+        <footer> <!-- Membuat informasi tambahan di bawah aplikasi -->
+            <div class="penutup">Didukung oleh RevoU, hasil kreasi Richard Tanuhardjanto</div>
+        </footer>
+    </div>
+</body>
+</html>
