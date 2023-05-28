@@ -7,7 +7,7 @@
 <body> <!-- Dalam body dibangun struktur penulisan yaitu header, navigator, article/konten, serta footer-->
     <div id="luaran" style="background-color: aquamarine;"> <!-- Membuat kontainer terluar -->
         <header>
-            <div class="kepala"> <!-- Membuat subkontainer dari nama aplikasi -->
+            <div class="pembuka"> <!-- Membuat subkontainer dari nama aplikasi -->
                 <center> <!-- Membuat nama aplikasi -->
                     <span style="font-size: 50px;">Katik</span> 
                     <span style="font-size: 30px;">Kalkulator Matematik</span>
@@ -17,25 +17,30 @@
         <div id="konten" style="background-color:rgb(27, 253, 178);" > <!-- Membuat subkontainer 
             dari isi proyek -->
             <nav>
-                <center><h2>Welcome to Katik</h2></center> <!-- Membuat text tentang pengenalan aplikasi -->
-                <div class="notis">Hai Sobat, Selamat datang di Katik :]</div>
-                <div class="notis" style="margin-bottom: 40px;">
-                    Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas
-                    dan keliling bangun datar
-                </div>
+                <div class="kepala">
+                    <center><h2>Welcome to Katik</h2></center> 
+                    <!-- Membuat text tentang pengenalan aplikasi -->
+                    <center><div class="notis">Hai Sobat, Selamat datang di Katik :]</div></center>
+                    <center><div class="notis" style="margin-bottom: 40px;">
+                        Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas
+                        dan keliling bangun datar
+                    </div></center>
+                </div> 
             </nav>
             <article> <!-- Membuat isi konten -->
-                <!-- LUAS PERSEGI -->
-                <center><h2>Luas Persegi</h2></center>
-                <div class="bentuk"> <!--Membuat kontainer untuk subkontainer baru
-                     agar memudahkan tata letak pembuatan persegi -->
-                    <div class="persegi"></div>
+                <div class="kepala">
+                    <!-- LUAS PERSEGI -->
+                    <center><h2>Luas Persegi</h2></center>
+                    <div class="bentuk"> <!--Membuat kontainer untuk subkontainer baru
+                        agar memudahkan tata letak pembuatan persegi -->
+                        <div class="persegi"></div>
+                    </div>
+                    <div>Rumus Luas Persegi yaitu :</div> <!-- Menuliskan rumus persegi untuk ditampilkan -->
+                    <center><div>L = S x S</div></center>
+                    <div>Dimana :</div>
+                    <div>L = Luas</div>
+                    <div>S = Sisi</div>
                 </div>
-                <div>Rumus Luas Persegi yaitu :</div> <!-- Menuliskan rumus persegi untuk ditampilkan -->
-                <center><div>L = S x S</div></center>
-                <div>Dimana :</div>
-                <div>L = Luas</div>
-                <div>S = Sisi</div>
         
                 <form onsubmit="return false"> <!-- Fungsi ini untuk mengaktifkan 
                     tombol enter untuk mengeksekusi input sebagai tombol hitung -->
@@ -55,19 +60,21 @@
                     <!-- Membuat tombol reset -->
                 </form>
                 <br><br>
-        
-                <!-- KELILING PERSEGI -->
-                <!-- Isi script di bawah ini sama seperti dengan yang di atas 
-                    hanya saja penggunaanya untuk keliling persegi -->
-                <center><h2>Keliling Persegi</h2></center>
-                <div class="bentuk">
-                    <div class="persegi"></div>
+    
+                <div class="kepala">
+                    <!-- KELILING PERSEGI -->
+                    <!-- Isi script di bawah ini sama seperti dengan yang di atas 
+                        hanya saja penggunaanya untuk keliling persegi -->
+                    <center><h2>Keliling Persegi</h2></center>
+                    <div class="bentuk">
+                        <div class="persegi"></div>
+                    </div>
+                    <div>Rumus Keliling Persegi yaitu :</div>
+                    <center><div>K = 4 x S</div></center>
+                    <div>Dimana :</div>
+                    <div>K = Keliling</div>
+                    <div>S = Sisi</div>
                 </div>
-                <div>Rumus Keliling Persegi yaitu :</div>
-                <center><div>K = 4 x S</div></center>
-                <div>Dimana :</div>
-                <div>K = Keliling</div>
-                <div>S = Sisi</div>
         
                 <form onsubmit="return false">
                     <div class="permintaan">Hitung Keliling Persegi</div>
